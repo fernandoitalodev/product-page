@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+body {
+  background-color: white;
+}
+@layer components {
+  .flex-container-row {
+    @apply flex justify-center items-center gap-4;
+  }.btn-orange{
+    @apply rounded-lg items-center justify-center text-white gap-2  m-4 flex py-4 px-6 font-bold bg-[#ff7d1a] lg:w-[90%];
+  }
+}
