@@ -4,7 +4,7 @@ import { itemsType } from "../ItemsCart";
 export const CartContext = createContext(null);
 
 export const CartProvider = ({ children }) => {
-  const [showCart, setShowCart] = useState<boolean>(true);
+  const [showCart, setShowCart] = useState<boolean>(false);
   const [cartItems, setCartItems] = useState<itemsType[]>([]);
 
   

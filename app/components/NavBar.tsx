@@ -7,36 +7,7 @@ import NavItems from "./NavItems";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
-   const [isLgWidth,setIsLgWidth]=useState(screenWidth >=1024?true:false)
-   const seeWidht=()=>{
-    if(screenWidth >=1024){
-        setIsOpen(false)
-        setIsLgWidth(true)
-        
-    }else{
-        setIsLgWidth(false)
-        
-    }
-  } 
  
-
-  const handleResize = () => {
-    setScreenWidth(window.innerWidth);
-  };
-  useEffect(() => {
-    window.addEventListener('resize', handleResize);
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-   
-  }, []);
- 
-  useEffect(()=>{
-    seeWidht()
-
-  },[screenWidth])
-
  
   return (
     <>
@@ -63,9 +34,9 @@ const NavBar = () => {
             <NavItems/>
             </div>
      </div>} 
-     {isLgWidth && <div>
+     <div className="lg:block hidden">
         <NavItems row="row"/>
-        </div>}
+        </div>
     </>
   );
 };
