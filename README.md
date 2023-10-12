@@ -1,13 +1,21 @@
 
 
 ## The project
-    
-  This project is a challenger of FrontEndMentor.io and the goal is simulate a product page of a Ecommerce.
+
+This project is a challenge from FrontEndMentor.io, and the goal is to simulate a product page for an e-commerce website.
 
 ## Tools
 
- in The project i used the Framework Next.js with TypeScript and for the style i used Tailwindcss
+In this project, I used the Next.js framework with TypeScript, and for styling, I used Tailwind CSS.
 
+## Deployment on Vercel
 
-## Deploy on Vercel
+Visit the page: [Product Page on Vercel](https://product-page-web.vercel.app/)
 
+## Images
+
+Desktop Image:
+![Desktop view](/public/images/pageImg.png)
+
+Mobile Image:
+![Mobile view](/public/images/pageMobile.png)
